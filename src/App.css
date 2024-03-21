@@ -1,0 +1,121 @@
+.maincard {
+    margin-top: 100px;
+    width: 350px;
+  }
+  
+  @media screen and (max-width:576px) {
+    .maincard {
+      width: 200px;
+    }
+  }
+  
+  .cardbody {
+    margin: 10px 10px 0px 10px;
+    text-align: left;
+  }
+  
+  .cardtitle {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+    
+  .bottomdate {
+    font-size: 12px;
+  }
+  
+  /* Grid layout for all cards */
+  .allcardsmap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 1rem;
+  }
+  
+  @media screen and (max-width:996px) {
+    .allcardsmap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 50px;
+      margin-right: 50px;
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (max-width:576px) {
+    .allcardsmap {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 30px;
+      margin-right: 10px;
+      gap: 1rem;
+    }
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    position: relative;
+  }
+  
+  .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+  
+  .navbar-nav .nav-item:hover .nav-link::after {
+    background-color: rgb(15, 68, 15);
+  }
+  
+  .navbar-nav .nav-item:hover .nav-link {
+    color: rgb(15, 68, 15);
+  }
+  
+  .allcardmapmargin {
+    margin-top: 25px;
+  }
+  
+  .navbar-nav .nav-item {
+    position: relative;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    transition: color 0.3s;
+  }
+    
+  .navbar-nav .nav-item.active .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+  
+  @media screen and (max-width:768px) {
+    .navbar-nav .nav-item {
+      position: relative;
+    }
+  
+    .navbar-nav .nav-item .nav-link {
+      transition: color 0.3s;
+    }
+    .navbar-nav .nav-item.active .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+    }
+  }
+  
+  .navbarheader {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
